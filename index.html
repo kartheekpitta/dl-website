@@ -5,81 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Pitta Kartheek - Curriculum Vitae</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #e0e0e0;
+            background-color: #f5f5f5;
+            color: #333;
         }
         header {
-            background: linear-gradient(90deg, #000000, #1a1a1a);
+            background-color: #004080;
             color: white;
             text-align: center;
             padding: 50px 20px;
-            font-size: 2em;
+            font-size: 2.5em;
             font-weight: bold;
+            animation: fadeInDown 1s;
         }
         nav {
             text-align: center;
-            padding: 10px;
-            background: #1a1a1a;
+            padding: 15px;
+            background-color: #003366;
+            animation: fadeInUp 1s;
         }
         nav a {
-            color: #ff9800;
+            color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ff9800;
         }
         section {
             padding: 40px;
-            background: #1e1e1e;
+            background: white;
             margin: 20px auto;
             width: 80%;
-            border-radius: 12px;
-            box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        section:hover {
-            transform: scale(1.02);
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s;
         }
         h2 {
-            color: #ff9800;
-            border-bottom: 2px solid #ff9800;
-            padding-bottom: 5px;
+            color: #004080;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 10px;
         }
         ul {
             list-style: none;
             padding: 0;
         }
         ul li {
-            padding: 8px 0;
+            padding: 10px 0;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background: #000000;
+            background-color: #003366;
             color: white;
             font-size: 1.2em;
             margin-top: 30px;
+            animation: fadeInUp 1s;
         }
         .download-links a {
-            color: #ff9800;
+            color: #004080;
             text-decoration: none;
             display: block;
             margin: 10px 0;
             font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        .download-links a:hover {
+            color: #ff9800;
         }
     </style>
 </head>
 <body>
-    <header>
+    <header class="animate__animated animate__fadeInDown">
         <h1>Dr. Pitta Kartheek</h1>
         <p>Deep Learning Researcher | Assistant Professor</p>
     </header>
     
-    <nav>
+    <nav class="animate__animated animate__fadeInUp">
         <a href="#about">About Me</a>
         <a href="#education">Education</a>
         <a href="#research">Research</a>
@@ -89,26 +99,24 @@
         <a href="#contact">Contact</a>
     </nav>
     
-    <section id="about">
+    <section id="about" class="animate__animated animate__fadeIn">
         <h2>About Me</h2>
-        <p>I specialize in molecular modeling, drug discovery, protein-protein interactions, and the application of deep learning in both materials science and biological research. My expertise includes ligand- and structure-based drug design, molecular dynamics simulations, QSAR modeling, and computational immunology. I am particularly interested in leveraging artificial intelligence to enhance predictive modeling and analysis in scientific research.
-
-Passionate about teaching, I actively engage in mentoring and lecturing on Machine Learning, Deep Learning, and Artificial Intelligence, helping students and professionals explore AI-driven advancements in computational sciences.
-
-I also offer consultation services in molecular docking, molecular dynamics (MD) simulations, scientific writing, and proofreading. Open to collaborations and research opportunities.</p>
+        <p>I specialize in molecular modeling, drug discovery, protein-protein interactions, and the application of deep learning in both materials science and biological research. My expertise includes...</p>
+        <p>Passionate about teaching, I actively engage in mentoring and lecturing on Machine Learning, Deep Learning, and Artificial Intelligence, helping students and professionals explore AI-driven advancements...</p>
+        <p>I also offer consultation services in molecular docking, molecular dynamics (MD) simulations, scientific writing, and proofreading. Open to collaborations and research opportunities.</p>
     </section>
     
-    <section id="education">
+    <section id="education" class="animate__animated animate__fadeIn">
         <h2>Education</h2>
         <p>Ph.D. in Computational Natural Sciences, IIIT-Hyderabad | M.Sc. Chemistry, Osmania University | B.Sc. Chemistry, Kakatiya University</p>
     </section>
     
-    <section id="research">
+    <section id="research" class="animate__animated animate__fadeIn">
         <h2>Research Interests</h2>
         <p>Deep Learning, Recurrent Neural Networks (RNNs), Generative AI, Computer Vision, Artificial Neural Networks, and Computational Chemistry.</p>
     </section>
     
-    <section id="publications">
+    <section id="publications" class="animate__animated animate__fadeIn">
         <h2>Publications</h2>
         <ul>
             <li>"Sequence specificity, energetics and mechanism of mismatch recognition by DNA damage sensing protein Rad4/XPC," in Nucleic Acids Research, 2020.</li>
@@ -117,12 +125,12 @@ I also offer consultation services in molecular docking, molecular dynamics (MD)
         </ul>
     </section>
     
-    <section id="services">
+    <section id="services" class="animate__animated animate__fadeIn">
         <h2>Services</h2>
         <p>I provide scientific writing, proofreading, docking studies, and molecular dynamics (MD) simulations.</p>
     </section>
     
-    <section id="deep-learning-course">
+    <section id="deep-learning-course" class="animate__animated animate__fadeIn">
         <h2>Deep Learning Course</h2>
         <p>This course covers fundamental and advanced topics in Deep Learning, Machine Learning, and Artificial Intelligence.</p>
         <h3>Downloadable Lecture Notes & Slides</h3>
@@ -139,15 +147,15 @@ I also offer consultation services in molecular docking, molecular dynamics (MD)
         </ul>
     </section>
     
-    <section id="contact">
+    <section id="contact" class="animate__animated animate__fadeIn">
         <h2>Contact Information</h2>
         <p><strong>Address:</strong> Department of Chemistry, S & H Block, JBIET, Moinabad, Hyderabad, Telangana, India</p>
         <p><strong>Mobile:</strong> +91 9701577399</p>
         <p><strong>Email:</strong> kartheekpitta@gmail.com</p>
     </section>
     
-    <footer>
-        <p>&copy; 2024 Dr. Pitta Kartheek. All Rights Reserved.</p>
+    <footer class="animate__animated animate__fadeInUp">
+        <p>&copy; 2025 Dr. Pitta Kartheek. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
